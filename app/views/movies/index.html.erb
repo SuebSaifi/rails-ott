@@ -1,0 +1,6 @@
+<% @movies.each do |movie|%>
+<%= movie.movie_title%>
+<%= movie.movie_description%>
+<%=image_tag(url_for(movie.movie_thumbnail), controls: "")%>
+<%=video_tag(url_for(movie.movie_video), controls: "")%>
+<%end%>

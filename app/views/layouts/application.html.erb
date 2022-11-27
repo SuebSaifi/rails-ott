@@ -6,11 +6,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application" %>
     <%= javascript_importmap_tags %>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
 
   <body>
+    <%= render "layouts/shared/header"%>
     <%= yield %>
+    <%= render "layouts/shared/footer"%>
+
   </body>
+  <script>
+    console.log($)
+  </script>
 </html>
