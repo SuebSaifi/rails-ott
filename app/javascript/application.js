@@ -7,3 +7,4 @@ import "popper"
 import "bootstrap"
 window.jQuery = $;
 window.$ = $;
+import * as bootstrap from "bootstrap"
