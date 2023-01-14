@@ -1,6 +1,13 @@
 {
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "css": "^3.0.0"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "css": "^3.0.0",
+    "rails_admin": "3.1.1",
+    "sass": "^1.57.1"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }
